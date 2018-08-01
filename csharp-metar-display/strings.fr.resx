@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AutomatedObservation" xml:space="preserve">
+    <value>Observation automatisée</value>
+  </data>
+  <data name="CardinalEast" xml:space="preserve">
+    <value>Est</value>
+  </data>
+  <data name="CardinalEastNorthEast" xml:space="preserve">
+    <value>Est-Nord-Est</value>
+  </data>
+  <data name="CardinalEastSouthEast" xml:space="preserve">
+    <value>Est-Sud-Est</value>
+  </data>
+  <data name="CardinalNorth" xml:space="preserve">
+    <value>Nord</value>
+  </data>
+  <data name="CardinalNorthEast" xml:space="preserve">
+    <value>Nord-Est</value>
+  </data>
+  <data name="CardinalNorthNorthEast" xml:space="preserve">
+    <value>Nord-Nord-Est</value>
+  </data>
+  <data name="CardinalNorthNorthWest" xml:space="preserve">
+    <value>Nord-Nord-Ouest</value>
+  </data>
+  <data name="CardinalNorthWest" xml:space="preserve">
+    <value>Nord-Est</value>
+  </data>
+  <data name="CardinalSouth" xml:space="preserve">
+    <value>Sud</value>
+  </data>
+  <data name="CardinalSouthEast" xml:space="preserve">
+    <value>Sud-Est</value>
+  </data>
+  <data name="CardinalSouthSouthEast" xml:space="preserve">
+    <value>Sud-Sud-Est</value>
+  </data>
+  <data name="CardinalSouthSouthWest" xml:space="preserve">
+    <value>Sud-Sud-Ouest</value>
+  </data>
+  <data name="CardinalSouthWest" xml:space="preserve">
+    <value>Sud-Ouest</value>
+  </data>
+  <data name="CardinalWest" xml:space="preserve">
+    <value>Ouest</value>
+  </data>
+  <data name="CardinalWestNorthWest" xml:space="preserve">
+    <value>Ouest-Nord-Ouest</value>
+  </data>
+  <data name="CardinalWestSouthWest" xml:space="preserve">
+    <value>Ouest-Sud-Ouest</value>
+  </data>
+  <data name="CloudsAmountBKN" xml:space="preserve">
+    <value>fragmenté</value>
+  </data>
+  <data name="CloudsAmountCLR" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CloudsAmountFEW" xml:space="preserve">
+    <value>peu nombreux</value>
+  </data>
+  <data name="CloudsAmountNSC" xml:space="preserve">
+    <value>pas de nuage significatif</value>
+  </data>
+  <data name="CloudsAmountNULL" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CloudsAmountOVC" xml:space="preserve">
+    <value>couvert</value>
+  </data>
+  <data name="CloudsAmountSCT" xml:space="preserve">
+    <value>épars</value>
+  </data>
+  <data name="CloudsAmountVV" xml:space="preserve">
+    <value>visibilité verticale</value>
+  </data>
+  <data name="CloudsDetails" xml:space="preserve">
+    <value>à {meters} mètres ({feet} pieds)</value>
+  </data>
+  <data name="CloudsLabel" xml:space="preserve">
+    <value>Nuages</value>
+  </data>
+  <data name="CloudsTypeCannotMeasure" xml:space="preserve">
+    <value>mesure impossible</value>
+  </data>
+  <data name="CloudsTypeCB" xml:space="preserve">
+    <value>cumulonimbus</value>
+  </data>
+  <data name="CloudsTypeNULL" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CloudsTypeTCU" xml:space="preserve">
+    <value>cumulus congestus</value>
+  </data>
+  <data name="DownwardTrend" xml:space="preserve">
+    <value>tendance à la baisse</value>
+  </data>
+  <data name="MetarIsNotValid" xml:space="preserve">
+    <value>METAR invalide</value>
+  </data>
+  <data name="ObservationDateLabel" xml:space="preserve">
+    <value>Date d'observation</value>
+  </data>
+  <data name="ObservationDetails" xml:space="preserve">
+    <value>Jour {metarDay} du mois à {metarTime} UTC</value>
+  </data>
+  <data name="PressureDetails" xml:space="preserve">
+    <value>{hectoPascal} hectopascal ({mercuryInch} millimètres de mercure)</value>
+  </data>
+  <data name="PressureLabel" xml:space="preserve">
+    <value>Pression</value>
+  </data>
+  <data name="PrevailingVisibility" xml:space="preserve">
+    <value>{prevailingVisibility} mètres</value>
+  </data>
+  <data name="RawMetarLabel" xml:space="preserve">
+    <value>Metar Brut</value>
+  </data>
+  <data name="TemperaturesDetails" xml:space="preserve">
+    <value>température {airTemperatureC}°C ({airTemperatureF}°F), point de rosée: {dewTemperatureC}°C ({dewTemperatureF}°F)</value>
+  </data>
+  <data name="TemperaturesLabel" xml:space="preserve">
+    <value>Températures</value>
+  </data>
+  <data name="UpwardTrend" xml:space="preserve">
+    <value>tendance à la hausse</value>
+  </data>
+  <data name="Visibility10KmOrMore" xml:space="preserve">
+    <value>10 km or more (6 statute-miles)</value>
+  </data>
+  <data name="VisibilityCAVOK" xml:space="preserve">
+    <value>Plafond et visibilité OK</value>
+  </data>
+  <data name="VisibilityLabel" xml:space="preserve">
+    <value>Visibilité</value>
+  </data>
+  <data name="VisualRangeBetween" xml:space="preserve">
+    <value>moins de {visualRangeMin} mètres, plus de {visualRangeMax} mètres</value>
+  </data>
+  <data name="VisualRangeExact" xml:space="preserve">
+    <value>{visualRangeMin} mètres</value>
+  </data>
+  <data name="VisualRangeForRunway" xml:space="preserve">
+    <value>pour la piste {runway}</value>
+  </data>
+  <data name="VisualRangeLabel" xml:space="preserve">
+    <value>Portée visuelle de piste</value>
+  </data>
+  <data name="WindDetails" xml:space="preserve">
+    <value>de {meanDirectionDegrees} degrés ({meanDirectionCardinal}) à {speedKnot} nœuds</value>
+  </data>
+  <data name="WindDirectionVariations" xml:space="preserve">
+    <value>(variable entre {windDirectionVariationDegrees} degrés ({windDirectionVariationCardinal}) et {windDirectionVariationMaxDegrees} degrés ({windDirectionVariationMaxCardinal)}))</value>
+  </data>
+  <data name="WindGusts" xml:space="preserve">
+    <value>rafales jusqu'à {windGustsKnot} nœuds</value>
+  </data>
+  <data name="WindLabel" xml:space="preserve">
+    <value>Vent</value>
+  </data>
+  <data name="WindshearAllRunways" xml:space="preserve">
+    <value>Cisaillement sur toutes les pistes</value>
+  </data>
+  <data name="WindshearLabel" xml:space="preserve">
+    <value>Cisaillement du vent</value>
+  </data>
+  <data name="WindshearOnRunway" xml:space="preserve">
+    <value>Cisaillement sur la piste {wr}</value>
+  </data>
+  <data name="WindVariableDirection" xml:space="preserve">
+    <value>variable</value>
+  </data>
+  <data name="WindWith" xml:space="preserve">
+    <value>avec</value>
+  </data>
+</root>
