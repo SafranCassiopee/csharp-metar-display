@@ -1,4 +1,4 @@
-C# METAR diplay
+C# METAR display
 =================
 [![Build status](https://ci.appveyor.com/api/projects/status/y4f8f4u14ulvxty2?svg=true)](https://ci.appveyor.com/project/SafranCassiopee/csharp-metar-display/branch/master)
 [![Coverage Status](https://coveralls.io/repos/github/SafranCassiopee/csharp-metar-display/badge.svg)](https://coveralls.io/github/SafranCassiopee/csharp-metar-display)
@@ -29,7 +29,7 @@ Requirements
 
 This library package only requires .NET >= 4.5
 
-It is currently tested automatically for .NET >= 4.5 using [nUnit 3.9.0](http://nunit.org/).
+It is currently tested automatically for .NET >= 4.5 using [nUnit 3.10.1](http://nunit.org/).
 
 Although this is provided as a library project, a command line version (csharp-metar-display.cmd) is also included that can be used as both an example and a starting point.
 csharp-metar-display.cmd requires [CommandLineParser](https://github.com/commandlineparser/commandline).
@@ -37,7 +37,23 @@ csharp-metar-display.cmd requires [CommandLineParser](https://github.com/command
 Usage:
 
 ```shell
-csharp-metar-display.cmd.exe --METAR "CYFB 271515Z 32017KT 3SM DRSN BKN040 M29/M34 A2957 RMK SC7 SLP019"
+csharp-metar-display.cmd.exe --Metar "CYFB 271515Z 32017KT 3SM DRSN BKN040 M29/M34 A2957 RMK SC7 SLP019"
+Observation Date: 27 day of the month at 15:15 UTC
+Wind: from 320 degrees (northeast) at 17 knots
+Visibility: 4828.02 meters
+Temperatures: temperature -29°C (-20.2°F), dew point: -34°C (-29.2°F)
+Pressure: 1001 hPa (30 inHg)
+Clouds: broken at 4000 feet (1219 meters)
+```
+
+```shell
+csharp-metar-display.cmd.exe --Metar "CYFB 271515Z 32017KT 3SM DRSN BKN040 M29/M34 A2957 RMK SC7 SLP019" --Culture "fr-FR"
+Date d'observation: Jour 27 du mois à 15:15 UTC
+Vent: de 320 degrés (nord-est) à 17 nouds
+Visibilité: 4828.02 mètres
+Températures: température -29°C (-20.2°F), point de rosée: -34°C (-29.2°F)
+Pression: 1001 hectopascal (30 millimètres de mercure)
+Nuages: fragmenté à 1219 mètres (4000 pieds)
 ```
 
 If you want to integrate the library easily in your project, you should consider using the official nuget package available from https://www.nuget.org/.
@@ -76,7 +92,7 @@ Add the csharp-metar-display project to your solution, then add a reference to i
 Usage
 -----
 
-Call the MetarDisplay.GetWeatherMessage with your METAR as the first parameter (other parameters are all optional). 
+Call the MetarDisplay.GetWeatherMessage with your METAR as the first parameter (other parameters are optional and should be self-explanatory anyway). 
 The returned string is your METAR in a human-readable form.
 
 Contribute
@@ -108,7 +124,7 @@ nuget restore csharp-metar-display\
 You're ready to launch the test suite with:
 
 ```shell
-nunit-console.exe /xml:results.xml csharp-metar-display-tests\bin\debug\csharp-metar-display-tests.dll
+nunit-console.exe /xml:results.xml csharp-metar-display.tests\bin\debug\csharp-metar-display.tests.dll
 ```
 
 This library is fully unit tested, and uses [nUnit]((http://nunit.org/)) to launch the tests.

@@ -23,14 +23,11 @@ namespace csharp_metar_display.cmd
         private static void DisplayMetar(Options options)
         {
             Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo(options.Culture);
-            Display(options.Culture, MetarDisplay.GetWeatherMessage(options.Metar, options.OutputType));
+            Display(MetarDisplay.GetWeatherMessage(options.Metar, options.OutputType));
         }
 
-        private static void Display(string header, string message)
+        private static void Display(string message)
         {
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine(header);
-            Console.ResetColor();
             Console.WriteLine(message);
             Console.WriteLine();
         }
