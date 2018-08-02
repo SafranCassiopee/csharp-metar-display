@@ -1,4 +1,5 @@
 ﻿using csharp_metar_decoder.entity;
+using NString;
 using System.Linq;
 using System.Text;
 
@@ -16,7 +17,14 @@ namespace csharp_metar_display.metadata
             }
             else if (decodedMetar.WindshearRunways?.Count > 0)
             {
-                windshear.Append(string.Join(", ", decodedMetar.WindshearRunways.Select(windshearRunway => $"{strings.WindshearOnRunway} {windshearRunway}"), false));
+                windshear.Append(string.Join(", ", decodedMetar.WindshearRunways.Select(windshearRunway =>
+                    StringTemplate.Format(strings.WindshearOnRunway, 
+                new
+                {
+                    wr = windshearRunway
+                }
+                )
+                )));
             }
             Label = strings.WindshearLabel;
             Message = windshear.ToString();
