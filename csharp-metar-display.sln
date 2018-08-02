@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp-metar-display", "csh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp-metar-display.cmd", "csharp-metar-display.cmd\csharp-metar-display.cmd.csproj", "{BC487DDA-5B94-47DA-859D-A835905447E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp-metar-display.tests", "csharp-metar-display.tests\csharp-metar-display.tests.csproj", "{A2383D9B-610C-46F6-987F-8AD06DED87FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp-metar-display.tests", "csharp-metar-display.tests\csharp-metar-display.tests.csproj", "{E447718B-2715-4760-818E-AEECA6A4D6F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{BC487DDA-5B94-47DA-859D-A835905447E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC487DDA-5B94-47DA-859D-A835905447E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC487DDA-5B94-47DA-859D-A835905447E6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A2383D9B-610C-46F6-987F-8AD06DED87FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A2383D9B-610C-46F6-987F-8AD06DED87FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A2383D9B-610C-46F6-987F-8AD06DED87FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A2383D9B-610C-46F6-987F-8AD06DED87FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E447718B-2715-4760-818E-AEECA6A4D6F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E447718B-2715-4760-818E-AEECA6A4D6F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E447718B-2715-4760-818E-AEECA6A4D6F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E447718B-2715-4760-818E-AEECA6A4D6F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
