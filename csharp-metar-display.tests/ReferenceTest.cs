@@ -68,7 +68,7 @@ namespace csharp_metar_display.tests
         {
             Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en-US");
             var message = MetarDisplay.GetWeatherMessage("ABC", OutputType.HtmlDiv, true, true);
-            Assert.AreEqual("<div>\n<b>Raw Metar&nbsp;:</b>&nbsp;CYFB 271515Z 32017KT 3SM DRSN BKN040 M29/M34 A2957 RMK SC7 SLP019<br />\n<b>Observation Date&nbsp;:</b>&nbsp;27 day of the month at 15:15 UTC<br />\n<b>Wind&nbsp;:</b>&nbsp;from 320 degrees (northeast) at 17 knots<br />\n<b>Visibility&nbsp;:</b>&nbsp;4828.02 meters<br />\n<b>Temperatures&nbsp;:</b>&nbsp;temperature -29&#176;C (-20.2&#176;F), dew point: -34&#176;C (-29.2&#176;F)<br />\n<b>Pressure&nbsp;:</b>&nbsp;1001 hPa (30 inHg)<br />\n<b>Clouds&nbsp;:</b>&nbsp;broken at 4000 feet (1219 meters)<br />\n</div>", message);
+            Assert.AreEqual("ABC\nMETAR is not valid:\nStation ICAO code not found (4 char expected)\n", message);
         }
     }
 }

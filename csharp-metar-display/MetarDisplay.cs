@@ -47,12 +47,12 @@ namespace csharp_metar_display
 
             if (!decodedMetar.IsValid)
             {
-                weatherMessageSb.AppendLine($"{decodedMetar.RawMetar}");
-                weatherMessageSb.AppendLine($"{strings.MetarIsNotValid}:");
+                weatherMessageSb.Append($"{decodedMetar.RawMetar}\n");
+                weatherMessageSb.Append($"{strings.MetarIsNotValid}:\n");
 
                 foreach (var metarChunkDecodedEx in decodedMetar.DecodingExceptions)
                 {
-                    weatherMessageSb.AppendLine($"{metarChunkDecodedEx.Message}");
+                    weatherMessageSb.Append($"{metarChunkDecodedEx.Message}\n");
                 }
             }
             else
