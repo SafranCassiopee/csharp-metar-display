@@ -22,9 +22,9 @@ Raw METAR format is highly standardized through the International Civil Aviation
     <tags>metar aviation weather</tags>
      <dependencies>
         <group targetFramework=".NETFramework4.5">
+          <dependency id="csharp-metar-decoder" version="1.0.0.40" />
+          <dependency id="NString" version="1.2.0" />
         </group>
-        <dependency id="csharp-metar-decoder" version="1.0.0.40" />
-        <dependency id="NString" version="1.2.0" />
       </dependencies>
   </metadata>
   <files>
