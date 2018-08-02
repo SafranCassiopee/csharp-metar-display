@@ -38,6 +38,7 @@ Usage:
 
 ```shell
 csharp-metar-display.cmd.exe --Metar "CYFB 271515Z 32017KT 3SM DRSN BKN040 M29/M34 A2957 RMK SC7 SLP019"
+
 Observation Date: 27 day of the month at 15:15 UTC
 Wind: from 320 degrees (northeast) at 17 knots
 Visibility: 4828.02 meters
@@ -48,6 +49,7 @@ Clouds: broken at 4000 feet (1219 meters)
 
 ```shell
 csharp-metar-display.cmd.exe --Metar "CYFB 271515Z 32017KT 3SM DRSN BKN040 M29/M34 A2957 RMK SC7 SLP019" --Culture "fr-FR"
+
 Date d'observation: Jour 27 du mois à 15:15 UTC
 Vent: de 320 degrés (nord-est) à 17 nouds
 Visibilité: 4828.02 mètres
