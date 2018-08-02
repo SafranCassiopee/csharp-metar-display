@@ -47,12 +47,12 @@ namespace csharp_metar_display
 
             if (!decodedMetar.IsValid)
             {
-                weatherMessageSb.AppendLine($"{decodedMetar.RawMetar}");
-                weatherMessageSb.AppendLine($"{strings.MetarIsNotValid}:");
+                weatherMessageSb.Append($"{decodedMetar.RawMetar}\n");
+                weatherMessageSb.Append($"{strings.MetarIsNotValid}:\n");
 
                 foreach (var metarChunkDecodedEx in decodedMetar.DecodingExceptions)
                 {
-                    weatherMessageSb.AppendLine($"{metarChunkDecodedEx.Message}");
+                    weatherMessageSb.Append($"{metarChunkDecodedEx.Message}\n");
                 }
             }
             else
@@ -96,11 +96,11 @@ namespace csharp_metar_display
             var weatherMessageSb = new StringBuilder();
             if (string.IsNullOrEmpty(tableClass))
             {
-                weatherMessageSb.AppendLine($"<table>");
+                weatherMessageSb.Append($"<table>\n");
             }
             else
             {
-                weatherMessageSb.AppendLine($"<table class=\"{tableClass}\">");
+                weatherMessageSb.Append($"<table class=\"{tableClass}\">\n");
             }
             if (showRawMetar)
             {
@@ -123,11 +123,11 @@ namespace csharp_metar_display
             var weatherMessageSb = new StringBuilder();
             if (string.IsNullOrEmpty(divClass))
             {
-                weatherMessageSb.AppendLine($"<div>");
+                weatherMessageSb.Append($"<div>\n");
             }
             else
             {
-                weatherMessageSb.AppendLine($"<div class=\"{divClass}\">");
+                weatherMessageSb.Append($"<div class=\"{divClass}\">\n");
             }
             if (showRawMetar)
             {
