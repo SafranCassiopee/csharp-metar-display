@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>csharp-metar-display</id>
+    <version>$version$</version>
+    <title>CSharp METAR Display</title>
+    <authors>SAFRAN Cassiopee</authors>
+    <owners>SAFRAN Cassiopee</owners>
+    <projectUrl>https://github.com/SafranCassiopee/csharp-metar-display</projectUrl>
+    <licenseUrl>https://raw.githubusercontent.com/SafranCassiopee/csharp-metar-display/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This piece of software is a library package that provides a way to display METAR observation.
+
+METAR is a format made for weather information reporting. METAR weather reports are predominantly used by pilots and by meteorologists, who use it to assist in weather forecasting.
+Raw METAR format is highly standardized through the International Civil Aviation Organization (ICAO).
+
+*    [METAR definition on wikipedia](http://en.wikipedia.org/wiki/METAR)
+*    [METAR format specification](http://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI1/VolumeI.1.html)
+*    [METAR documentation](http://meteocentre.com/doc/metar.html)</description>
+    <summary>This piece of software is a library package that provides a way to display METAR observation.</summary>
+    <releaseNotes>First release.</releaseNotes>
+    <tags>metar aviation weather</tags>
+     <dependencies>
+        <group targetFramework=".NETFramework4.5">
+          <dependency id="csharp-metar-decoder" version="1.0.0.40" />
+          <dependency id="NString" version="1.2.0" />
+        </group>
+      </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\csharp-metar-display.dll" target="lib\Net45\csharp-metar-display.dll" />
+  </files>
+</package>
