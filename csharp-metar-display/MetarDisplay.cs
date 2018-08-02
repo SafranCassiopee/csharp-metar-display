@@ -59,7 +59,6 @@ namespace csharp_metar_display
             {
                 switch (outputType)
                 {
-                    default:
                     case OutputType.Text:
                         weatherMessageSb.Append(decodedMetar.OutputText(showRawMetar));
                         break;
